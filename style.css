@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -6,6 +5,7 @@
 }
 html{
    font-size: 62.5%;
+   font-family: sans-serif;
 }
 body{
   padding-top: 2px;
@@ -14,7 +14,10 @@ body{
   width: 100%;
   height: 100vh;
 }
-ul{
+img{
+  pointer-events: none;
+}
+nav ul{
     list-style-type: none;
     display:flex;
     position:relative;
@@ -22,7 +25,6 @@ ul{
     padding: 2%;
     border:solid;
     border-radius: 10%;
-    font-family: sans-serif;
     font-weight: bolder;
     font-size: 1.8rem;
     & li{
@@ -41,6 +43,18 @@ nav{
     top: 0;
     left: 0;
     right: 0;
+}
+footer{
+    background-color:#635976;
+    color: white;
+    font-weight: 600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
 }
 main{
   display: flex;

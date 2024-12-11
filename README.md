@@ -1,6 +1,6 @@
-<h1 align="center"> Portfolio Simple</h1>
+<h1 align="center"> Webfolio</h1>
 
-This is a simple web page that showcases my portfolio using HTML and CSS. It does not have any back-end or interactivity, but it shows how the portfolio interface looks like on different devices and screen sizes.
+This is a simple web page that showcases my Resume and Bio data using HTML and CSS.
 
 ## Features
 
