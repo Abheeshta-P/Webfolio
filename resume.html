@@ -5,41 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    .resume {
+      box-shadow: 0 0 20px #3f305d23;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-size: 1.6rem;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #04037b;
+      border-radius: 10px;
+      color: black;
+    }
+    .resume h3 {
+      font-size: 2rem;
+    }
+    .resume h2 {
+      color: #04037b;
+    }
+    .resume ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+    #name {
+      text-align: center;
+    }
+    .projects h2,.objective h2,.skills h2,.education h2,.projects h2{
+      margin-bottom: 10px;
+    }
+    .projects h2{
+      margin-bottom: 13px;
+    }
+    .project{
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #screenshot-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+  }
+  #modal-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 5rem;
+    text-align: center;
+    background-color: rgba(71, 71, 71, 0.548);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+  }
+  .project-title{
+    width: max-content;
+  }
+  </style>
 </head>
 <body>
   <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html">Bio data</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biodata.html">Bio data</a></li>
     </ul>
   </nav>
 
-  <div class="resume">
-    <div>
-      <h3>Education</h3>
+  <div class="resumeContainer">
+    <div class="resume">
+      <h1 id="name">Abheeshta P</h1>
+      <section class="objective">
+       <h2>Objective</h2>
+        <p>
+        Aspiring front-end developer with strong skills in HTML, CSS, JavaScript, and React. Eager to leverage my
+        understanding of front-end technologies to contribute effectively to projects, while expanding my knowledge and
+        skills in back-end development.
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Frontend Development: HTML, CSS, JavaScript, React, Next.js</li>
+          <li>Backend Development: Node.js, Express</li>
+          <li>Database Management: MongoDB, SQL</li>
+          <li>Version Control: Git, GitHub</li>
+        </ul>
+      </section>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3 class="project-title" data-ss="/images/p1.png">Eventra</h3>
+          <p>A comprehensive event planning platform to connect Event Planners/Creators and local Service Providers.</p>
+          <p><strong>Tech Stack:</strong> Next.js, Redux-toolkit, Node.js, Express.js, MongoDB</p>
+          <strong>Features:</strong> 
+          <ul>
+            <li>Facilitates event planning and management</li>
+            <li>Offers an intuitive user interface</li>
+            <li>Supports gallery uploads</li>
+            <li>Provides automated email notifications to streamline communication</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="project-title" data-ss="/images/p2.png">Anonspil</h3>
+          <p>A fun and engaging platform to interact anonymously and spark conversations.</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Webhook</p>
+          <strong>Features:</strong> 
+          <ul>
+            <li>Send Anonymous Messages: Users can type their message in a text area and send it anonymously.</li>
+            <li>Random Question Generator: If users can't think of something to say, they can click the randomize button to generate a random question.</li>
+            <li>Animated GIF Feedback: Displays animated GIFs to indicate message sending status (success, error, or no message).</li>
+          </ul>
+        </div>
+        <!-- Modal -->
+      <div id="screenshot-modal" style="display: none;">
+        <div class="modal-content">
+          <span id="close-modal">&times;</span>
+          <img id="modal-image" src="" alt="Project Screenshot" />
+        </div>
+      </div>
+    </section>
+  
+    <section class="education">
+      <h2>Education</h2>
       <ul>
-        <li>Bachelor of Technology in Computer Science, XYZ University, 2020-2024</li>
-        <li>High School, ABC School, 2018-2020</li>
+        <li>Bachelor of Engineering : Canara Engineering college Bantwal, 2022-Present</li>
+        <li>Pre University, SDPT PU college Kateel, 2020-2022</li>
       </ul>
-    </div>
-
-    <div>
-      <h3>Skills</h3>
-      <ul>
-        <li>Web Development: HTML, CSS, JavaScript, React</li>
-        <li>Backend Development: Node.js, Express</li>
-        <li>Database Management: MongoDB, SQL</li>
-        <li>Version Control: Git, GitHub</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Work Experience</h3>
-      <ul>
-        <li>Intern at DEF Tech Solutions (2023): Worked on building responsive web applications.</li>
-        <li>Freelance Web Developer (2022-2023): Developed personal and client projects in web development.</li>
-      </ul>
+    </section>
     </div>
   </div>
 
