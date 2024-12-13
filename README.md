@@ -1,16 +1,15 @@
 <h1 align="center"> Webfolio</h1>
 
-This is a simple web page that showcases my Resume and Bio data using HTML and CSS.
+This is a simple web page that showcases my Resume and Bio data using HTML and CSS and Jquery.
 
 ## Features
 
 - Responsive design that adapts to different screen sizes and devices using media queries
-- Portfolio logo and colors to make the web page look professional
 - Conveys my passion towards different fields like Web development, web design etc
 
 ## Technologies
 
-- HTML and CSS for the front-end
+- HTML, CSS and Jquery for the front-end
 
 ## Installation
 
