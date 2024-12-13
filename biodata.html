@@ -5,17 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bio data</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      min-height: 100vh;
+    }
+    .container {
+      box-shadow: 0 0 20px #3f305d23;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #04037b;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 1.2rem;
+    }
+   h2 {
+      color: #04037b;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    h1{
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 3.3rem;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .personal-details li,.hobbies li,.skills li,.education li{
+      font-size: 15px;
+    }
+
+  </style>
 </head>
 <body>
   <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="biodata.html">Bio data</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biodata.html">Bio data</a></li>
     </ul>
-</nav>
-<footer>
-  <p>Developed and designed by &copy;Abheeshta P </p>
-</footer>
+  </nav>
+
+  <div class="container">
+    <h1>Bio data</h1>
+    <section class="personal-details">
+      <h2>Personal Details</h2>
+      <ul>
+        <li><strong>Name:</strong> Abheeshta P</li>
+        <li><strong>Date of Birth:</strong> May 9, 2005</li>
+        <li><strong>Gender:</strong> Female</li>
+        <li><strong>Nationality:</strong> Indian</li>
+        <li><strong>Email:</strong> abheeshta.p@gmail.com</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Educational Background</h2>
+      <ul>
+        <li><strong>Bachelor of Engineering:</strong> Canara Engineering College, Bantwal (2022 - Present)</li>
+        <li><strong>Pre-University:</strong> SDPT PU College, Kateel (2020 - 2022)</li>
+        <li><strong>High School:</strong> St. Dominics High School, Badakabailu (2018 - 2020)</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend Development: HTML, CSS, JavaScript, React</li>
+        <li>Backend Development: Node.js, Express</li>
+        <li>Database Management: MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+      </ul>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Singing and Listening to music</li>
+        <li>Reading and exploring new technologies</li>
+        <li>Designing and editing graphics</li>
+        <li>Photography and creative projects</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>Developed and designed by &copy; Abheeshta P</p>
+  </footer>
 </body>
 </html>
